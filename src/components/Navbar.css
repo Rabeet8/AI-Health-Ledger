@@ -1,19 +1,19 @@
 .header-container {
     display: flex;
-    justify-content: space-between; /* This will push the h1 to the left and the button to the right */
-    align-items: center; /* Aligns the elements vertically in the middle */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 10px;
   }
   
   .logo {
-    margin: 0; /* Remove any default margin */
+    margin: 0; 
     color: white;
     font-size: 18px;
   }
  
 
   .navbar-container {
-    margin-top: 5px; /* Adjust the margin as needed */
+    margin-top: 5px; 
   }
   
   .connect-button {
