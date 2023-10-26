@@ -1,0 +1,33 @@
+.header-container {
+    display: flex;
+    justify-content: space-between; /* This will push the h1 to the left and the button to the right */
+    align-items: center; /* Aligns the elements vertically in the middle */
+    padding: 10px;
+  }
+  
+  .logo {
+    margin: 0; /* Remove any default margin */
+    color: white;
+    font-size: 18px;
+  }
+ 
+
+  .navbar-container {
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+  
+  .connect-button {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 8px 18px;
+    background-color: rgba(0, 128, 128, 1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .connect-button:hover {
+    background-color: rgba(0, 128, 128, 1);
+  }
+  

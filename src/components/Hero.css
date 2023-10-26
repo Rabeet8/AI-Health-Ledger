@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=PT+Serif:wght@400;700&display=swap');
+.text-container {
+    text-align: center;
+    color: white;
+    margin-top: 20vh; 
+  }
+  
+  h1 {
+    font-size: 35px; 
+
+    font-family: 'PT Serif', serif;
+    
+  }
+  .blue-text {
+    color: rgba(0, 128, 128, 1);
+    font-size: 35px; 
+    font-family: 'PT Serif', serif;
+
+  }
+  
+  p {
+    color: white; 
+    font-size: 35px; 
+    font-family: 'PT Serif', serif;
+  }
+  
+  .user_btn{
+        border-radius: 10px; 
+        font-size: 18px; 
+        padding: 12px 20px; 
+        background-color: rgba(0, 128, 128, 1); 
+        color: #fff; 
+        border: none; 
+        cursor: pointer;
+        margin-left: 38rem;
+        font-family: 'PT Serif', serif;
+      }
+  
