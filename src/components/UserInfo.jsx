@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserInfo.css";
+import {Link} from 'react-router-dom';
 const UserInfo = () => {
   return (
     <div className="form">
@@ -15,9 +16,14 @@ const UserInfo = () => {
           <option value="male">Male</option>
           <option value="female">Female</option>
         </select>
-        <label> Details</label>
-        <textarea rows="6" placeholder="Type your message here" />
-        <button className="btn">Submit</button>
+   
+        <div className="form_btn-container">
+          <button className="form_btn">Submit</button>
+          <Link to='/gptinterface'>
+          <button className="form_btn">Next</button>
+          </Link>
+        </div>
+
       </form>
     </div>
   );

@@ -34,7 +34,7 @@ form input, textarea{
     color: #524d4d;
 
 }
-.btn {
+/* .btn {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
@@ -46,4 +46,24 @@ form input, textarea{
 
 .btn:hover{
     background: rgba(255,255,255,.2);
+  } */
+
+.form_btn{
+    border-radius: 10px; 
+        font-size: 18px; 
+        padding: 8px 12px;
+        background-color: rgba(0, 128, 128, 1); 
+        color: #fff; 
+        border: none; 
+        cursor: pointer;
+        /* margin: 0.3rem 16rem; */
+        margin-left: 1rem;
+        font-family: 'PT Serif', serif;
+       
+}
+
+.form_btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem 0.3rem;
   }

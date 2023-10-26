@@ -1,5 +1,6 @@
 import {React,useState,useEffect} from 'react'
 import './Navbar.css'
+import {Link} from 'react-router-dom';
 
 
 
@@ -62,7 +63,9 @@ const Navbar = () => {
     
   return (
     <div className="header-container">
+        <Link to='/app'>
     <h1 className='logo'>AI-HEALTH LEDGER</h1>
+        </Link>
     
     <div className="navbar-container">
       <button onClick={connectMetaMaskFunc} className="connect-button">
