@@ -1,10 +1,20 @@
 import {Link,useLocation} from 'react-router-dom';
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Hero.css'
-import UserInfo from './UserInfo';
+// import { Fade } from 'react-reveal';
+
+// import UserInfo from './UserInfo';
+
+
 const Hero = () => {
+
   const location = useLocation();
   const isUserInfoPage = location.pathname === '/userinfo';
+
+  // useEffect(()=>{
+  //   Aos.init();
+  // })
+
   return (
     <div>
     <div className="text-container">
@@ -17,7 +27,7 @@ const Hero = () => {
         <h1>Empowering HealthTech</h1>
       )}
       {isUserInfoPage ? null : (
-        <p>
+        <p  className="fade-left">
           <span className="blue-text">Secure</span>,{' '}
           <span className="blue-text">Personalized</span>, and{' '}
           <span className="blue-text">AI-Enhanced</span> Medical Solutions.
@@ -26,9 +36,11 @@ const Hero = () => {
     </div>
     {isUserInfoPage ? null : (
       <Link to="/userinfo">
-        <button className="user_btn">Give it a shot</button>
+        <button className="fade-left user_btn">Give it a shot</button>
       </Link>
     )}
+
+    
   </div>
   )
 }
