@@ -1,0 +1,30 @@
+
+.content-wrapper {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px; 
+  }
+  
+  .text-content {
+    width: 50%; 
+    color: white;
+  }
+  
+  .image-content2 {
+    width: 50%; /* Allocate 50% of the width to the image content */
+    text-align: left; /* Align the image to the right */
+  }
+  
+  .resized-image2 {
+    width: 500px; 
+    height: auto; 
+    border-radius: 1rem;
+    margin-left: 2rem;
+  }
+  .block-span {
+    display: block; 
+    margin-top: 5px; 
+  }
+  
+  

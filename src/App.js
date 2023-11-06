@@ -4,6 +4,7 @@ import {Routes,Route,Link} from 'react-router-dom';
 import Hero from './components/Hero';
 import UserInfo from './components/UserInfo';
 import GptInteface from './components/GptInteface';
+import BlockhainExplain from './components/BlockhainExplain';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       
       <Routes>
       <Route path='/gptinterface' element={<GptInteface/>}/>
+
       
       <Route path='/hero' element={<Hero/>}/>
       <Route path='/userinfo' element={<UserInfo/>}/>

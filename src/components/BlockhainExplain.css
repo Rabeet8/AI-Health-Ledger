@@ -1,0 +1,30 @@
+/* BlockhainExplain.css */
+.content-wrapper {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align content in the middle */
+    justify-content: space-between; /* Create space between text and image */
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  .text-content {
+    width: 50%; 
+    color: white;
+  }
+  
+  .image-content {
+    width: 60%; /* Allocate 50% of the width to the image content */
+    text-align: right; /* Align the image to the right */
+  }
+  
+  .resized-image {
+    width: 500px; 
+    height: auto; 
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+  .block-span {
+    display: block; 
+    margin-top: 5px; 
+  }
+  
+  
