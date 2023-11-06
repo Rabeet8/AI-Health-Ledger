@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./UserInfo.css";
 // require("dotenv").config();
-import Alert from 'react-bootstrap/Alert';
+import Alert from "react-bootstrap/Alert";
 const pinataSDK = require("@pinata/sdk");
 
 const UserInfo = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [number, setNumber] = useState();
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("male");
   const [isSuccessAlertVisible, setIsSuccessAlertVisible] = useState(false);
@@ -18,6 +19,7 @@ const UserInfo = () => {
     const formData = {
       name,
       email,
+      number,
       age,
       gender,
     };
@@ -36,8 +38,8 @@ const UserInfo = () => {
       const result = await pinata.pinJSONToIPFS(formData);
       console.log("IPFS CID:", result.IpfsHash);
       console.log(result);
-      console.log("User's Name:", name); 
-    
+      console.log("User's Name:", name);
+
       showSuccessAlert();
     } catch (error) {
       console.error("Error uploading to IPFS:", error);
@@ -49,13 +51,15 @@ const UserInfo = () => {
   };
 
   return (
-    
     <div className="form">
+      <h1 className="heading2">
+        Don't Worry Your Information Is Secured On Blockchain
+      </h1>
       {isSuccessAlertVisible && (
-            <div className="success-alert">
-              Your data is now stored on the blockchain.
-            </div>
-          )}
+        <div className="success-alert">
+          Your data is now stored on the blockchain.
+        </div>
+      )}
       <form>
         <label>Your Name</label>
         <input
@@ -69,9 +73,15 @@ const UserInfo = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label>Age</label>
+        <label>Mobile Number</label>
         <input
           type="text"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+        />
+        <label>Age</label>
+        <input
+          type="number"
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
@@ -90,8 +100,8 @@ const UserInfo = () => {
           <button className="form_btn" onClick={handleFormSubmit}>
             Submit
           </button>
-         
-          <Link to="/gptInterface">
+
+          <Link to="/gptInterface" state={{ name: name }}>
             <button className="form_btn">Next</button>
           </Link>
         </div>

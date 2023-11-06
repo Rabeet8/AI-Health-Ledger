@@ -1,18 +1,21 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route , useLocation} from 'react-router-dom';
 import Hero from './components/Hero';
 import UserInfo from './components/UserInfo';
 import GptInterface from './components/GptInterface';
 
 const App = () => {
+  const location = useLocation();
+  const { name } = location.state || { name: '' };
   return (
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Hero />} />
+        <Route path='/hero' element={<Hero />} />
         <Route path='/userinfo' element={<UserInfo />} />
-        <Route path='/gptinterface' element={<GptInterface />} />
+        <Route path='/gptInterface' element={<GptInterface name={name} />} />
+
       </Routes>
     </div>
   );

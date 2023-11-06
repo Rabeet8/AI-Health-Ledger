@@ -1,44 +1,20 @@
-import React, { useState } from 'react';
-import './Gpt.css';
+import React from 'react';
+import './GptInterface.css';
 
-const GptInterface = () => {
-  const [messages, setMessages] = useState([]);
-  const [input, setInput] = useState('');
-
-  const handleInputChange = (e) => {
-    setInput(e.target.value);
-  };
-
-  const handleSendMessage = () => {
-    if (input.trim() === '') return;
-    
-    // Add the user message to the list of messages
-    setMessages([...messages, { text: input, type: 'user' }]);
-    setInput('');
-
-    // Simulate a response from GPT-3 (you can replace this with actual GPT-3 integration)
-    setTimeout(() => {
-      setMessages([...messages, { text: 'This is a response from GPT-3.', type: 'bot' }]);
-    }, 1000);
-  };
-
+const GptInterface = ({ name }) => {
   return (
-    <div className="chat-container">
-      <div className="chat-messages">
-        {messages.map((message, index) => (
-          <div key={index} className={`chat-message ${message.type}`}>
-            {message.text}
-          </div>
-        ))}
-      </div>
-      <div className="chat-input">
-        <input
-          type="text"
-          placeholder="Type your message..."
-          value={input}
-          onChange={handleInputChange}
-        />
-        <button onClick={handleSendMessage}>Send</button>
+    <div>
+      <h3 className='user_call'>Hey {name} what is your problem</h3>
+
+      <div className="chat-interface">
+        <div className="chat-input-holder flex-column">
+          <form className="flex-grow-1">
+            <input
+              rows="1"
+              className="chat-input-textarea flex-shrink-0"
+            />
+          </form>
+        </div>
       </div>
     </div>
   );

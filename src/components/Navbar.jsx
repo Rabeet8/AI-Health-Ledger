@@ -63,7 +63,7 @@ const Navbar = () => {
     
   return (
     <div className="header-container">
-        <Link to='/app'>
+        <Link to='/hero'>
     <h1 className='logo'>AI-HEALTH LEDGER</h1>
         </Link>
     
