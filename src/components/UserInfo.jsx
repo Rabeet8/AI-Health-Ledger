@@ -36,6 +36,8 @@ const UserInfo = () => {
       const result = await pinata.pinJSONToIPFS(formData);
       console.log("IPFS CID:", result.IpfsHash);
       console.log(result);
+      console.log("User's Name:", name); 
+    
       showSuccessAlert();
     } catch (error) {
       console.error("Error uploading to IPFS:", error);

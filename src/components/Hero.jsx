@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import './Hero.css'
 import BlockhainExplain from './BlockhainExplain';
 import AIExplain from './AIExplain';
+import FAQs from './FAQs';
 // import { Fade } from 'react-reveal';
 
 // import UserInfo from './UserInfo';
@@ -46,6 +47,7 @@ const Hero = () => {
 {/* <BlockhainExplain/> */}
 
 {/* <AIExplain/> */}
+{/* <FAQs/> */}
   </div>
   )
 }
