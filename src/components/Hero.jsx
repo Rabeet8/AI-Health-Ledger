@@ -44,10 +44,10 @@ const Hero = () => {
       </Link>
     )}
  
-{/* <BlockhainExplain/> */}
+<BlockhainExplain/>
 
-{/* <AIExplain/> */}
-{/* <FAQs/> */}
+<AIExplain/>
+<FAQs/>
   </div>
   )
 }

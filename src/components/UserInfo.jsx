@@ -91,7 +91,7 @@ const UserInfo = () => {
             Submit
           </button>
          
-          <Link to="/gptinterface">
+          <Link to="/gptInterface">
             <button className="form_btn">Next</button>
           </Link>
         </div>

@@ -1,28 +1,21 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './components/Navbar';
-import {Routes,Route,Link} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import UserInfo from './components/UserInfo';
-import GptInteface from './components/GptInteface';
-import BlockhainExplain from './components/BlockhainExplain';
+import GptInterface from './components/GptInterface';
 
 const App = () => {
   return (
     <div>
-    
-      <Navbar/>
-      <Hero/>
-      
+      <Navbar />
       <Routes>
-      <Route path='/gptinterface' element={<GptInteface/>}/>
-
-      
-      <Route path='/hero' element={<Hero/>}/>
-      <Route path='/userinfo' element={<UserInfo/>}/>
-      </Routes> 
-     
+        <Route path='/' element={<Hero />} />
+        <Route path='/userinfo' element={<UserInfo />} />
+        <Route path='/gptinterface' element={<GptInterface />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
 export default App;
