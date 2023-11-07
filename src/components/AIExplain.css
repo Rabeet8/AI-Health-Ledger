@@ -12,8 +12,8 @@
   }
   
   .image-content2 {
-    width: 50%; /* Allocate 50% of the width to the image content */
-    text-align: left; /* Align the image to the right */
+    width: 50%; 
+    text-align: left; 
   }
   
   .resized-image2 {
