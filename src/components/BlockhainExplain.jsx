@@ -19,7 +19,7 @@ const BlockhainExplain = () => {
           data-aos="fade-right"
           data-aos-offset="200"
         >
-          <h1 style={{ width: "600px" }}>
+          <h1 className="cool-underline" style={{ width: "570px" }}>
             Your Data Is Secured On{" "}
             <span className="blue-text">Blockchain</span>
           </h1>
@@ -31,24 +31,21 @@ const BlockhainExplain = () => {
           <br />
 
           <span className="block-span">
-            <strong>🔒 Enhanced Security : </strong> Blockchain's decentralized
-            architecture eliminates single points of failure, making it more
-            resistant to data breaches and cyberattacks.
+            🔒 Blockchain's decentralized structure enhances security by
+            reducing vulnerabilities to data breaches and cyberattacks.
           </span>
 
           <br />
 
           <span className="block-span">
-            <strong>🔎 Transparency : </strong> Every transaction on the
-            blockchain is recorded and visible to all participants, creating a
-            transparent and traceable record of your data's movement.
+            🔎 Blockchain records every transaction, ensuring transparent and
+            traceable data movement for all participants.
           </span>
           <br />
 
           <span className="block-span">
-            <strong> 🙋‍♀️ Ownership: </strong> Blockchain puts you in control of
-            your personal data. You decide who can access and use your
-            information
+            🙋‍♀️ Blockchain empowers you to control access and use of your
+            personal data.
           </span>
         </div>
         <div

@@ -4,19 +4,19 @@ import "./FAQs.css";
 const FAQs = () => {
   const faqs = [
     {
-      question: "Q) What is Lorem Ipsum?",
+      question: "What is AI-Health Ledger?",
       answer:
-        "A) Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "AI-Health Ledger is a medical diagnoses system powered by Blockchain and Artificial Intelligence .",
     },
     {
-      question: "Q) Why do we use it?",
+      question: "Why do we use it?",
       answer:
-        "A) It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-      question: "Q) Where does it come from?",
+      question: "Where does it come from?",
       answer:
-        "A) Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+        "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     },
   ];
 

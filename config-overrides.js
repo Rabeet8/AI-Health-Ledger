@@ -1,9 +1,8 @@
 const webpack = require('webpack');
-module.exports = function override(config, env) {
 
+module.exports = function override(config, env) {
     config.resolve.fallback = {
         url: require.resolve('url'),
-        // fs: require.resolve("fs"),
         fs: require.resolve('browserify-fs'),
         assert: require.resolve('assert'),
         crypto: require.resolve('crypto-browserify'),
@@ -12,15 +11,17 @@ module.exports = function override(config, env) {
         os: require.resolve('os-browserify/browser'),
         buffer: require.resolve('buffer'),
         stream: require.resolve('stream-browserify'),
-        tty: require.resolve("tty-browserify"),
-        zlib: require.resolve("browserify-zlib"),
-        
+        tty: require.resolve('tty-browserify'),
+        zlib: require.resolve('browserify-zlib'),
+        querystring: require.resolve('querystring-es3'), // Add this line
+        net: require.resolve('net'), // Add this line
     };
+
     config.plugins.push(
         new webpack.ProvidePlugin({
             process: 'process/browser',
             Buffer: ['buffer', 'Buffer'],
-        }),
+        })
     );
 
     return config;

@@ -24,7 +24,7 @@ const AIExplain = () => {
           data-aos="fade-right"
           data-aos-offset="230"
         >
-          <h1 style={{ width: "700px" }}>
+          <h1 className="cool-underline"style={{ width: "615px" }}>
             Empowering Medical Diagnosis With{" "}
             <span className="blue-text">AI</span>
           </h1>
@@ -35,21 +35,15 @@ const AIExplain = () => {
           </h3>
           <br />
           <span className="block-span">
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s,
+          📊 AI systems leverage extensive medical data for precise diagnoses, minimizing errors.
           </span>
           <br />
           <span className="block-span">
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s,
+          🕒 AI expedites diagnoses by swiftly assessing medical images and patient data.
           </span>
           <br />
           <span className="block-span">
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s,
+          🌐 AI-driven diagnostics extend healthcare access to remote and underserved regions.
           </span>
         </div>
       </div>

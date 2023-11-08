@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=PT+Serif:wght@400;700&display=swap');
 .heading{
     color: white;
     text-align: center;
@@ -30,7 +30,9 @@
     background-position: 0 0;
     transition: background-size 0.3s;
 }
-
+h3,span{
+    font-family: 'PT Serif', serif;
+}
 .cool-underline:hover {
     background-size: 0 5px;
 }
