@@ -50,7 +50,7 @@
   transition: ease 0.25s all;
 }
 .side-menu-button:hover{
-background-color: rgba(255,255,255,0.1);
+background-color: rgba(0, 0, 0, 0.1);
 }
 
 .side-menu-button span{
@@ -59,7 +59,7 @@ background-color: rgba(255,255,255,0.1);
 }
 .chat-box{
   flex: 1;
-  background-color: #282c34;
+  background-color: #000000;
   position: relative;
 }
 .chat-input-holder{
@@ -70,7 +70,7 @@ left: 0;
 right: 0;
 }
 .chat-input-textarea{
-background-color: #40414f;
+background-color: #383842;
 width: 90%;
 padding: 12px;
 color: white;
@@ -88,7 +88,7 @@ text-align:left;
 
 }
 .chat-message.chatgpt{
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgb(28, 65, 65);
 
 }
 .chat-message-center{
@@ -108,7 +108,7 @@ width: 40px;
 height: 40px;
 }
 .avatar.chatgpt{
-  background-color: rgb(34, 212, 117);
+  background-color: rgba(0, 128, 128, 1);
   border-radius: 50px;
   width: 40px;
   height: 40px;

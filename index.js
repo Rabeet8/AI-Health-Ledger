@@ -3,6 +3,7 @@
 const express = require ('express')
 const bodyParser = require ('body-parser')
 const cors = require ('cors')
+require('dotenv').config();
 
 
 
@@ -16,7 +17,7 @@ const cors = require ('cors')
 const {OpenAI} = require ('openai');
 
 const openai = new OpenAI({
-  apiKey: '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' // This is also the default, can be omitted
+  apiKey: process.env.OPENAI_API_KEY // This is also the default, can be omitted
 });
 
 const app = express()
@@ -57,34 +58,3 @@ app.post('/', async(req,res)=>{
 app.listen(port,() =>{
     console.log(`Example app listening at http://localhost:${port}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

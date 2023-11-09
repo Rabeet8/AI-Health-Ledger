@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./UserInfo.css";
-// require("dotenv").config();
-import Alert from "react-bootstrap/Alert";
+require("dotenv").config();
+// import Alert from "react-bootstrap/Alert";
 const pinataSDK = require("@pinata/sdk");
 
 const UserInfo = () => {
@@ -27,10 +27,15 @@ const UserInfo = () => {
     // const formDataString = JSON.stringify(formData);
 
     // const { PINATA_API_KEY, PINATA_SECRET_KEY } = process.env;
+    // const PINATA_API_KEY = process.env.PINATA_API_KEY
+    // console.log(PINATA_API_KEY)
+// console.log(process.env);
 
+    // const PINATA_SECRET_KEY = process.env.PINATA_SECRET_KEY;
+    // console.log(PINATA_SECRET_KEY)
     const PINATA_API_KEY = "9eb7740b03abd9c6c621";
-    const PINATA_SECRET_KEY =
-      "85a201e3d0c42faf779f96f8b2b4d04b24307301e717f3236b4655faf6189d0e";
+
+     const PINATA_SECRET_KEY =  "85a201e3d0c42faf779f96f8b2b4d04b24307301e717f3236b4655faf6189d0e";
 
     const pinata = new pinataSDK(PINATA_API_KEY, PINATA_SECRET_KEY);
 

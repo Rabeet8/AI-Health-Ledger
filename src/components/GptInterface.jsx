@@ -79,12 +79,12 @@ setChatLog([...chatLogNew,{user: "gpt", message: `${data.message}`}])
   return (
     <div className="App">
 
-      <aside className="sidemenu">
+      {/* <aside className="sidemenu">
         <div className="side-menu-button" onClick ={clearChat}>
           <span>+</span>
           New Chat
         </div>
-      </aside>
+      </aside> */}
       <section className="chat-box">
         <div className="chat-log">
           {chatLog.map((message,index)=>(
