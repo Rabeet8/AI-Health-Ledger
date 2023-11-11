@@ -33,7 +33,7 @@ const UserInfo = () => {
 
     // const PINATA_SECRET_KEY = process.env.PINATA_SECRET_KEY;
     // console.log(PINATA_SECRET_KEY)
-    const PINATA_API_KEY = "9eb7740b03abd9c6c621";
+     const PINATA_API_KEY = "9eb7740b03abd9c6c621";
 
      const PINATA_SECRET_KEY =  "85a201e3d0c42faf779f96f8b2b4d04b24307301e717f3236b4655faf6189d0e";
 

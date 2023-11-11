@@ -17,7 +17,7 @@ require('dotenv').config();
 const {OpenAI} = require ('openai');
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY // This is also the default, can be omitted
+  apiKey: ''
 });
 
 const app = express()
@@ -25,20 +25,36 @@ app.use(bodyParser.json())
 app.use(cors())
 const port = 3080
 
-app.post('/', async(req,res)=>{
-    const {message} = req.body;
-   console.log(message, "message")
-    const response = await openai.createCompletion({
-        model: "text-davinci-003",
-        prompt: `${message}`,
-        max_tokens: 100,
-        temperature: 0.5,
+app.post('/', async(req,res) => {
+  const { message } = req.body;
+
+  // Create an array of messages. If it's the beginning of a conversation,
+  // it can start with an empty array or an initial message.
+  const messages = [
+      {
+          role: "user",
+          content: message
+      }
+  ];
+
+  try {
+      const chatCompletion = await openai.chat.completions.create({
+          model: "gpt-3.5-turbo",
+          messages: messages,  // Update this line
+          max_tokens: 100,
+          temperature: 0.5
       });
-      console.log()
+
+     
+      // console.log(chatCompletion.choices[0].message);
+
       res.json({
-        // data:response.data
-        message:response.data.choices[0].text,
-      })
+          message: chatCompletion.choices[0].message.content
+      });
+  } catch (error) {
+      console.error('Error:', error);
+      res.status(500).send('An error occurred');
+  }
 });
 
 

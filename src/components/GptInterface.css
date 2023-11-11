@@ -87,6 +87,18 @@ box-shadow: 0 0 8px 0 rgba(0,0,0,0.25) ;
 text-align:left;
 
 }
+
+.chat-message {
+  max-width: 80%; /* or any other max-width that fits your design */
+  margin: 0 auto; /* centers the messages */
+  word-wrap: break-word; /* ensures long words do not overflow */
+}
+
+.chat-message-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* or 'flex-start' to align messages to the top */
+}
 .chat-message.chatgpt{
   background-color: rgb(28, 65, 65);
 
@@ -107,16 +119,32 @@ border-radius: 50px;
 width: 40px;
 height: 40px;
 }
-.avatar.chatgpt{
-  background-color: rgba(0, 128, 128, 1);
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-  }
-.message{
+.avatar-img {
+  border-radius: 50%;  
+  object-fit: cover;  
+  width: 41px;         
+  height: 41px;        
+}
+
+
+
+/* .message{
+  margin-top: 6px;
   padding-left: 40px;
   padding-right: 40px;
+} */
+
+.message {
+  background-color: #000000; /* example background color */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* slight shadow for depth */
+  overflow-wrap: break-word; /* break long words to next line */
+  overflow-y: auto; /* adds a scrollbar if content overflows vertically */
+  max-height: 200px; /* maximum height before a scrollbar appears */
 }
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
