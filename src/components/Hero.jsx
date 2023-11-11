@@ -34,7 +34,7 @@ const Hero = () => {
       {/* {isUserInfoPage ? null : ( */}
       <h1>Empowering HealthTech</h1>
 
-        <p  className="fade-left">
+        <p  className="tag-line fade-left">
           <span className="blue-text">Secure</span>,{' '}
           <span className="blue-text">Personalized</span>, and{' '}
           <span className="blue-text">AI-Enhanced</span> Medical Solutions.
