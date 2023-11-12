@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FAQs.css";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const FAQs = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const faqs = [
     {
       question: "What is AI-Health Ledger?",
@@ -31,11 +36,11 @@ const FAQs = () => {
   };
 
   return (
-    <div className="faq-container">
-      {" "}
+    <div className="faq-container" data-aos="fade-left" >
+    
       //data-aos="fade-left" data-aos-offset="100"
       <h1 className="heading2">
-        <span className="cool-underline">Frequently Asked Questions</span>
+        <span className="cool-underline" >Frequently Asked Questions</span>
       </h1>
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">

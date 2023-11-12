@@ -32,14 +32,14 @@
   border-radius: 5px; 
   border: none;
   outline: none;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.25); /* Match the shadow of the input area */
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.25); 
   margin: auto;
 
 }
 .chat-log {
   overflow-y: auto; /* Allow scrolling */
   flex-grow: 1; /* Allow chat log to expand to fill space */
-  padding: 24px; /* Add padding */
+  
   margin-bottom: 120px; /* Push the chat log up from the bottom */
 }
 
@@ -80,12 +80,12 @@
   padding-right: 24px;
  
 }
-.avatar{
-background-color: white;
+/* .avatar{
+background-color: rgb(255, 255, 255);
 border-radius: 50px;
 width: 40px;
 height: 40px;
-}
+} */
 .avatar-img {
   border-radius: 50%;  
   object-fit: cover;  
@@ -97,8 +97,9 @@ height: 40px;
 
 .message{
   font-size: 15px;
-margin-left: 10px;
+/* margin-left: 10px; */
 max-height: none;
+margin: auto;
   
 }
 

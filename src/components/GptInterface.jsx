@@ -22,14 +22,16 @@
 
 // export default GptInterface;
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+
 import './GptInterface.css';
 import logo from '../images/logo.webp'
+import user from '../images/user.png'
 
 // import logo from './logo.svg';
 // import './App.css';
 import './normal.css'
-import { useState } from 'react';
+
 
 function GptInterface({ name }) {
 //add state for input and chat log
@@ -37,7 +39,7 @@ function GptInterface({ name }) {
 const [input, setInput] = useState("");
 const [chatLog, setChatLog] = useState([{
   user: "gpt",
-  message: `Hey ${name} how can i help you`
+  message: `Hey ${name} How can I help you?`
 },
 // {
 //   user: "me",
@@ -85,7 +87,9 @@ setChatLog([...chatLogNew,{user: "gpt", message: `${data.message}`}])
           New Chat
         </div>
       </aside> */}
+      
       <section className="chat-box">
+      
         <div className="chat-log">
           {chatLog.map((message,index)=>(
 
@@ -113,6 +117,7 @@ setChatLog([...chatLogNew,{user: "gpt", message: `${data.message}`}])
            className = "chat-input-textarea"  >
           </input>
           </form>
+          {/* <button onClick={clearChat}>Clear Chat</button> */}
         </div>
       </section>
 
@@ -124,7 +129,7 @@ setChatLog([...chatLogNew,{user: "gpt", message: `${data.message}`}])
 
 const formatResponse = (response) => {
   // Split the response by periods or other delimiters
-  const splitResponse = response.split('. ');
+  const splitResponse = response.split('.');
   return splitResponse.map((sentence, index) => (
     <p key={index}>{sentence}</p>
   ));
@@ -132,12 +137,27 @@ const formatResponse = (response) => {
 
 
 const ChatMessage = ({message}) =>{
+
+  
+
+  
   return(
     <div className={`chat-message ${message.user =="gpt" && "chatgpt"}`}>
     <div className="chat-message-center">
       <div className={`avatar ${message.user =="gpt" && "chatgpt"}`}>
 
 
+      {message.user === "me" && 
+            <img
+              src={user} 
+              alt="Avatar"
+              borderRadius = {50}
+              
+              width={41}
+              height={41}
+              className="avatar-img"
+            />
+          }
       {message.user === "gpt" && 
             <img
               src={logo} 

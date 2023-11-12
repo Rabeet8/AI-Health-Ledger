@@ -1,0 +1,31 @@
+.footer {
+    text-align: center;
+    /* Add any other styles for the footer */
+  }
+  
+  .follow-container {
+    display: flex;
+    align-items: center; /* Align the text and icons vertically */
+    justify-content: center; /* Center the container */
+    gap: 10px; /* Add space between text and icons */
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px; /* Add space between icons */
+  }
+  
+  .social-links a {
+    color: white; /* Set the color of the icons */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+  }
+  
+  .social-links a:hover {
+    color: #cccccc; /* Lighter shade when hovered over, if desired */
+  }
+  
+  .heading3 {
+    margin: 0; /* Remove default margin */
+    display: inline; /* Inline display for the 'Follow me' text */
+  }
+  
