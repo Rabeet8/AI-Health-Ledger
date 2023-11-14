@@ -23,7 +23,17 @@
     font-size: 35px; 
     font-family: 'PT Serif', serif;
   }
-  
+  .heading4{
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+}
+.feedback_span {
+  color: white;
+  text-align: center;
+  display: block; 
+  font-size: 20px;
+}
   .user_btn{
         border-radius: 10px; 
         font-size: 18px; 

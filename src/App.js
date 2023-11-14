@@ -4,6 +4,7 @@ import { Routes, Route , useLocation} from 'react-router-dom';
 import Hero from './components/Hero';
 import UserInfo from './components/UserInfo';
 import GptInterface from './components/GptInterface';
+import Feedback from './components/feedback';
 
 const App = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/hero' element={<Hero />} />
         <Route path='/userinfo' element={<UserInfo />} />
         <Route path='/gptInterface' element={<GptInterface name={name} />} />
+        <Route path = '/feedback' element={<Feedback/>}/>
 
       </Routes>
     </div>

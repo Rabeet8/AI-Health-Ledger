@@ -1,0 +1,77 @@
+
+
+.feedback-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will take the full height of the viewport */
+    width: 100%; /* This will take the full width of the viewport */
+  }
+  
+  .feedback-container {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, .1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .input-field, .textarea-field {
+    display: block;
+    width: calc(100% - 20px); /* accounting for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+  }
+  
+  .textarea-field {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submit-button, .delete-button {
+    background-color: rgba(0, 128, 128, 1);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .comments-list {
+    background: rgba(255, 255, 255, .1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  
+  .comment {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Ensures words are wrapped within the container */
+  }
+  
+  .delete-button {
+    background-color: rgba(0, 128, 128, 1);
+  }
+  

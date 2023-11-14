@@ -50,6 +50,17 @@ const Hero = () => {
 <BlockhainExplain/>
 
 <AIExplain/>
+<h1 className="heading4">
+        <span className="cool-underline">Your Feedback</span>
+        
+      </h1>
+      <span className='feedback_span'>Your thoughts matter to us! Click here to share your feedback and help us make your experience even better </span>
+      <br/>
+      <br/>
+
+      <Link to="/feedback">
+        <button className="fade-left user_btn">Share Your Thoughts</button>
+      </Link>
 <FAQs/>
 <Footer/>
   </div>

@@ -38,7 +38,7 @@ const FAQs = () => {
   return (
     <div className="faq-container" data-aos="fade-left" >
     
-      //data-aos="fade-left" data-aos-offset="100"
+      
       <h1 className="heading2">
         <span className="cool-underline" >Frequently Asked Questions</span>
       </h1>
