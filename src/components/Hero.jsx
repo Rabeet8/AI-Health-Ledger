@@ -50,6 +50,7 @@ const Hero = () => {
 <BlockhainExplain/>
 
 <AIExplain/>
+<div data-aos="fade-right" >
 <h1 className="heading4">
         <span className="cool-underline">Your Feedback</span>
         
@@ -61,6 +62,7 @@ const Hero = () => {
       <Link to="/feedback">
         <button className="fade-left user_btn">Share Your Thoughts</button>
       </Link>
+  </div>
 <FAQs/>
 <Footer/>
   </div>

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './feedback.css';
 
+
 const Comments = () => {
+    
   const [name, setName] = useState('');
   const [comment, setComment] = useState('');
   const [commentsList, setCommentsList] = useState([]);
@@ -30,7 +32,7 @@ const Comments = () => {
   };
 
   return (
-    <div className="feedback-wrapper"> {/* Add this wrapper div */}
+    <div className="feedback-wrapper" > 
     <div className="feedback-container">
       <div className="form-container">
         <label className="input-label">Your Name</label>

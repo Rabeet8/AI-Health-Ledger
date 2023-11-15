@@ -1,18 +1,8 @@
-
-// const { Configuration, OpenAIApi } = require("openai");
 const express = require ('express')
 const bodyParser = require ('body-parser')
 const cors = require ('cors')
 require('dotenv').config();
 
-
-
-// const configuration = new Configuration({
-//     organization: "org-sJY0pb2zHk225uL6KG7nPekI",
-//     apiKey: "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",
-// });
-// const openai = new OpenAIApi(configuration);
-// const response = await openai.listEngines();
 
 const {OpenAI} = require ('openai');
 
