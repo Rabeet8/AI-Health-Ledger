@@ -1,32 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=PT+Serif:wght@400;700&display=swap');
-.text-container {
-    text-align: center;
-    color: white;
-    margin-top: 20vh; 
-  }
-  
-  h1 {
-    font-size: 35px; 
-    font-family: 'PT Serif', serif;
-    
-  }
-  .blue-text {
-    color: rgba(0, 128, 128, 1);
-    font-size: 35px; 
-    font-family: 'PT Serif', serif;
 
-  }
-  
-  .tag-line {
-    color: white; 
-    font-size: 35px; 
-    font-family: 'PT Serif', serif;
-  }
-  .heading4{
-    color: white;
-    text-align: center;
-    margin-top: 5rem;
+/* Base styles */
+.text-container {
+  text-align: center;
+  color: white;
+  margin-top: 20vh; /* Adjusted for better responsiveness */
+}
+
+h1, .blue-text, .tag-line {
+  font-size: 2.2rem; /* Start with a smaller base size for better responsiveness */
+  font-family: 'PT Serif', serif;
+}
+.tag-line {
+  color: white; 
+  font-size: 35px; 
+  font-family: 'PT Serif', serif;
+}
+.blue-text {
+  color: rgba(0, 128, 128, 1);
+}
+.heading4{
+  color: white;
+  text-align: center;
+  margin-top: 5rem;
 }
 .feedback_span {
   color: white;
@@ -34,29 +30,85 @@
   display: block; 
   font-size: 20px;
 }
-  .user_btn{
-        border-radius: 10px; 
-        font-size: 18px; 
-        padding: 12px 20px; 
-        background-color: rgba(0, 128, 128, 1); 
-        color: #fff; 
-        border: none; 
-        cursor: pointer;
-        margin-left: 37rem;
-        font-family: 'PT Serif', serif;
-      }
-      .fade-left {
-        animation: fadeLeftAnimation 1s ease-in-out;
-      }
-      
-      @keyframes fadeLeftAnimation {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-      
+.user_btn {
+  border-radius: 10px;
+  font-size: 1.125rem; /* 18px */
+  padding: 12px 20px;
+  background-color: rgba(0, 128, 128, 1);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: 'PT Serif', serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Center button with auto margins */
+}
+
+/* ... other styles ... */
+
+/* Responsive adjustments using media queries */
+@media (max-width: 1200px) {
+  /* Adjust font sizes and margins for large devices (not quite full desktop size) */
+  h1, .blue-text, .tag-line {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Adjust for tablets */
+  h1, .blue-text, .tag-line {
+    font-size: 1.75rem;
+  }
+
+  .user_btn {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust for smaller tablets and large phones */
+  .text-container {
+    margin-top: 20vh;
+  }
+
+  h1, .blue-text, .tag-line {
+    font-size: 1.5rem;
+  }
+
+  .user_btn {
+    font-size: 0.875rem; /* 14px */
+    padding: 10px 18px; /* Slightly smaller padding */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust for most phones */
+  .text-container {
+    margin-top: 20vh;
+  }
+
+  h1, .blue-text, .tag-line {
+    font-size: 1.25rem;
+  }
+
+  .user_btn {
+    font-size: 0.875rem; /* 14px */
+    padding: 8px 16px; /* Even smaller padding */
+  }
+
+  .heading4, .feedback_span {
+    font-size: 1rem;
+  }
+}
+
+/* Consider adding a very small screen size if necessary */
+@media (max-width: 400px) {
+  h1, .blue-text, .tag-line {
+    font-size: 1.1rem;
+  }
+
+  .user_btn {
+    font-size: 0.75rem; /* 12px */
+    padding: 6px 14px;
+  }
+}

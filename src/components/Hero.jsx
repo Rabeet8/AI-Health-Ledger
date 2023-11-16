@@ -55,7 +55,7 @@ const Hero = () => {
         <span className="cool-underline">Your Feedback</span>
         
       </h1>
-      <span className='feedback_span'>Your thoughts matter to us! Click here to share your feedback and help us make your experience even better </span>
+      <span style={{color: 'white'}}className='feedback_span'>Your thoughts matter to us! Click here to share your feedback and help us make your experience even better </span>
       <br/>
       <br/>
 
